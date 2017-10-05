@@ -22,7 +22,8 @@ path.basename('/foo/bar/baz/asdf/quux.html');
 ## If you also want to remove the extension
 
 ```
-path.basename('/foo/bar/baz/asdf/quux.html', path.extname(fpath))
+const fpath = '/foo/bar/baz/asdf/quux.html';
+path.basename(fpath, path.extname(fpath))
 // returns
 'quux'
 ```
